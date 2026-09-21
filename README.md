@@ -1,5 +1,5 @@
 📖 Dear Diary
-<h3>Just install it and i promise to you that you will buy a coffee for me</h3>
+<p aling="center"><strong></strong><h3>Just install it and i promise to you that you will buy a coffee for me....</h3></p></strong>
 <p align="center"> <strong>Your memories. Your thoughts. Your private space.</strong> </p>
 
 <p align="center"> <em>An AI-powered private diary built for writing, remembering, reflecting, and understanding your personal story.</em> </p>
