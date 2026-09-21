@@ -15,7 +15,9 @@
 </p>
 
 <p><h1>Download It!</h1></p>
-https://github.com/B-max12/dear_diary/releases/download/v1.0.0/DearDiary-v1.0.0.apk
+<p></p>https://github.com/B-max12/dear_diary/releases/download/v1.0.0/DearDiary-v1.0.0.apk</p>
+<p><h1>Check the updates here.</h1></p>
+<p>https://github.com/B-max12/dear_diary/releases/latest</p>
 🌙 Why Dear Diary?
 
 Most diary applications give you a place to write.
