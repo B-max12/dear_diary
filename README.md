@@ -12,9 +12,10 @@
 
 
 
-
 </p>
 
+<p><h1>Download It!</h1></p>
+https://github.com/B-max12/dear_diary/releases/download/v1.0.0/DearDiary-v1.0.0.apk
 🌙 Why Dear Diary?
 
 Most diary applications give you a place to write.
