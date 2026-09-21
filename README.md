@@ -1,1012 +1,386 @@
 📖 Dear Diary
+<h3>Just install it and i promise to you that you will buy a coffee for me</h3>
+<p align="center"> <strong>Your memories. Your thoughts. Your private space.</strong> </p>
 
-Your memories. Your thoughts. Your private space.
+<p align="center"> <em>An AI-powered private diary built for writing, remembering, reflecting, and understanding your personal story.</em> </p>
 
-Dear Diary is a privacy-focused, AI-powered digital diary designed to turn everyday journaling into a meaningful personal experience.
+<p align="center">
 
-It combines traditional journaling with AI conversations, intelligent diary search, rich media memories, privacy controls, biometric protection, reminders, reflection tools, and personal organization — while keeping privacy and user ownership at the center of the experience.
 
-✨ Overview
 
-Dear Diary is not just a notes application.
 
-It is designed as a private digital space where users can write, remember, reflect, search, and talk.
 
-Users can create diary entries containing text and rich media, organize their memories, revisit previous moments, and interact with an AI companion that can understand and work with their diary content.
 
-Core Philosophy
-             ┌─────────────────────┐
-             │      YOUR LIFE      │
-             └──────────┬──────────┘
-                        │
-                        ▼
-              ┌─────────────────┐
-              │   Dear Diary    │
-              └────────┬────────┘
-                       │
-       ┌───────────────┼────────────────┐
-       ▼               ▼                ▼
-   📝 Journal       🧠 Reflect       🔐 Protect
-       │               │                │
-       ▼               ▼                ▼
-   Memories        AI Companion     Privacy
-       │               │                │
-       └───────────────┼────────────────┘
-                       ▼
-              🌱 Personal Growth
-🚀 Features
-📝 Personal Journaling
 
-Create personal diary entries with:
 
-Rich text
-Titles
-Dates
-Private thoughts
-Personal reflections
-Memories
-Attachments
-Searchable content
-Entry metadata
+</p>
 
-Every entry is designed to feel like a page from a personal diary rather than a generic notes document.
+🌙 Why Dear Diary?
 
-🤖 AI Companion
+Most diary applications give you a place to write.
 
-Dear Diary includes an AI-powered companion designed specifically around the user's personal diary.
+Dear Diary is designed to give you a place to write, remember, search, reflect, and talk.
 
-Instead of treating the AI as a generic chatbot, the system can work with the user's own diary context.
+Your diary should not feel like a database of forgotten notes. It should become a private timeline of your thoughts, memories, questions, hopes, mistakes, and moments.
 
-Two AI Modes
-💬 Talk to AI
-
-A conversational mode for talking naturally with the AI companion.
-
-Examples:
-
-"Talk to me."
-
-"I'm feeling confused today."
-
-"Help me think about something."
-
-"What do you remember about my recent entries?"
-🔎 Search My Diary
-
-A separate mode focused on finding information from previous diary entries.
-
-Examples:
-
-"When did I write about my university?"
-
-"Find my entries about friendship."
-
-"What did I write last month?"
-
-"Show me the entries where I mentioned Paris."
-
-Keeping these two modes separate prevents normal conversation from being confused with diary retrieval.
-
-🧠 AI Architecture
-flowchart TD
-
-    U[User] --> UI[Dear Diary UI]
-
-    UI --> MODE{AI Mode}
-
-    MODE -->|Talk to AI| CHAT[AI Conversation]
-    MODE -->|Search Diary| SEARCH[Diary Search]
-
-    CHAT --> CONTEXT[Context Manager]
-    SEARCH --> RETRIEVAL[Diary Retrieval]
-
-    RETRIEVAL --> DB[(Diary Database)]
-    RETRIEVAL --> EMB[Embeddings / Semantic Search]
-
-    CONTEXT --> MEMORY[Relevant Personal Context]
-
-    MEMORY --> LLM[LLM Provider]
-    RETRIEVAL --> LLM
-
-    LLM --> RESPONSE[AI Response]
-    RESPONSE --> UI
-🔐 Privacy & Security
-
-Privacy is one of the fundamental principles of Dear Diary.
-
-Diary applications contain extremely personal information, therefore security cannot be treated as an optional feature.
-
-Security Layers
-                    ┌──────────────────────┐
-                    │       USER           │
-                    └──────────┬───────────┘
-                               │
-                               ▼
-                    ┌──────────────────────┐
-                    │   App Authentication │
-                    └──────────┬───────────┘
-                               │
-                               ▼
-                    ┌──────────────────────┐
-                    │ Biometric / App Lock │
-                    └──────────┬───────────┘
-                               │
-                               ▼
-                    ┌──────────────────────┐
-                    │ Authorization / RLS  │
-                    └──────────┬───────────┘
-                               │
-                               ▼
-                    ┌──────────────────────┐
-                    │ Secure API Layer     │
-                    └──────────┬───────────┘
-                               │
-                               ▼
-                    ┌──────────────────────┐
-                    │ Protected Database   │
-                    └──────────────────────┘
-Security Goals
-User-specific data isolation
-Database-level authorization
-Secure authentication
-Biometric protection
-Protected media access
-Secure API communication
-No client-side exposure of privileged secrets
-Environment-based configuration
-Production-safe API key management
-Automatic lock when leaving protected areas
-
-Important: API secrets must never be shipped as publicly accessible frontend credentials. Production deployments should use a secure server-side/API gateway architecture wherever privileged keys are required.
-
-🔑 Authentication & App Lock
-
-Dear Diary can provide multiple layers of protection.
-
-App Launch
-    │
-    ▼
-Authentication
-    │
-    ▼
-Biometric Enabled?
-   / \
- Yes  No
- │     │
- ▼     ▼
-Fingerprint   App
- / Face       Access
- │
- ▼
-Today / Home
-
-The lock system is designed to avoid interrupting legitimate workflows such as:
-
-Selecting a photo
-Selecting a video
-Recording audio
-Opening a system file picker
-Returning from media selection
-
-The application should lock when the user actually leaves or backgrounds the protected application rather than treating every system UI transition as an app exit.
-
-📸 Rich Memories
-
-Diary entries can contain more than text.
-
-Supported content may include:
-
-🖼️ Images
-🎙️ Audio
-🎥 Video
-📝 Text
-📎 Attachments
-
-Example:
-
-┌─────────────────────────────────────┐
-│              22 September            │
-│                                     │
-│  A quiet evening...                 │
-│                                     │
-│  ┌───────────┐  ┌───────────┐       │
-│  │   Photo   │  │   Photo   │       │
-│  └───────────┘  └───────────┘       │
-│                                     │
-│  🎙️ Voice Memory                    │
-│                                     │
-│  "I want to remember this day..."   │
-└─────────────────────────────────────┘
-📅 Reminders
-
-Dear Diary can provide offline-friendly diary reminders.
-
-Users can:
-
-Create reminders
-Receive notifications
-Mark reminders as Done
-Snooze reminders
-Snooze for 10 minutes
-Continue using the diary without an internet connection where platform capabilities allow
-Reminder Flow
 flowchart LR
 
-    CREATE[Create Reminder] --> STORE[Local Storage]
-    STORE --> SCHEDULER[Notification Scheduler]
-    SCHEDULER --> NOTIFY[Notification]
-    NOTIFY --> ACTION{User Action}
+    A["📝 Write"] --> B["💾 Remember"]
+    B --> C["🔎 Find"]
+    C --> D["🤖 Understand"]
+    D --> E["🌱 Reflect"]
+    E --> A
+
+    style A fill:none,stroke-width:2px
+    style B fill:none,stroke-width:2px
+    style C fill:none,stroke-width:2px
+    style D fill:none,stroke-width:2px
+    style E fill:none,stroke-width:2px
+The difference
+Traditional Diary	Dear Diary
+📝 Write entries	📝 Write rich diary entries
+🔎 Basic keyword search	🧠 Intelligent diary search
+📂 Store memories	📸 Store rich memories
+💬 Generic chatbot	🤖 Personal AI companion
+🔐 Basic account security	🔒 Multi-layer privacy
+📅 Simple reminders	⏰ Smart diary reminders
+📖 Notes	🙏 Dedicated reflective spaces
+📱 App	🌱 Personal digital companion
+🧠 One Diary. Multiple Ways to Remember.
+
+Dear Diary brings your personal experiences into one private space.
+
+mindmap
+  root((📖 Dear Diary))
+    📝 Journal
+      Text
+      Photos
+      Audio
+      Video
+      Memories
+    🤖 AI Companion
+      Talk to AI
+      Search Diary
+      Reflection
+      Summaries
+    🔐 Privacy
+      App Lock
+      Biometrics
+      Secure Storage
+      User Isolation
+    🙏 Reflection
+      Prayer
+      Hope
+      Dreams
+      Questions
+      Confessions
+    📅 Organization
+      Calendar
+      Reminders
+      Timeline
+      Search
+✨ Why Would Someone Choose Dear Diary?
+1. 📝 Because a diary should be more than a text box
+
+Write naturally and preserve the context around your memories.
+
+                 YOUR ENTRY
+                     │
+        ┌────────────┼────────────┐
+        ▼            ▼            ▼
+      Text         Photos       Audio
+        │            │            │
+        └────────────┼────────────┘
+                     ▼
+              📖 One Memory
+
+Instead of separating your thoughts, photographs, recordings, and memories across different applications, Dear Diary is designed to bring them together.
+
+2. 🤖 Because your diary should be searchable by meaning
+
+Traditional search asks:
+
+"Does this exact word exist?"
+
+Dear Diary can be designed to ask:
+
+"Which memories are related to what I'm asking?"
 
-    ACTION -->|Done| COMPLETE[Completed]
-    ACTION -->|Snooze| SNOOZE[10 Minute Snooze]
-    SNOOZE --> SCHEDULER
-🙏 Letter to God
-
-Dear Diary also provides a dedicated reflective writing space for personal conversations with God.
-
-Possible categories include:
-
-🙏 Prayer
-🌙 Wish
-✨ Dream
-💔 Loss
-🌱 Hope
-💭 Just a Talk
-❓ Question
-🤍 Confession
-😔 Guilt
-🔁 Bad Habit
-💌 Answer
-
-The purpose is not to turn these entries into ordinary notes, but to preserve them as a separate reflective part of the user's diary.
-
-🧭 Application Architecture
-flowchart TB
-
-    CLIENT[Client Application]
-
-    CLIENT --> AUTH[Authentication]
-    CLIENT --> DIARY[Diary Module]
-    CLIENT --> AI[AI Companion]
-    CLIENT --> MEDIA[Media Manager]
-    CLIENT --> LOCK[Security / App Lock]
-    CLIENT --> REMINDERS[Reminder Engine]
-
-    DIARY --> API[Application API]
-
-    AI --> AIAPI[AI Gateway]
-
-    MEDIA --> STORAGE[(Object Storage)]
-
-    API --> DATABASE[(PostgreSQL)]
-
-    AIAPI --> PROVIDER[LLM Provider]
-
-    DATABASE --> RLS[Row Level Security]
-
-    RLS --> USERDATA[User-Owned Data]
-🏗️ High-Level System Design
-                         ┌─────────────────────┐
-                         │     Mobile / Web    │
-                         │      Frontend       │
-                         └──────────┬──────────┘
-                                    │
-                   ┌────────────────┼────────────────┐
-                   │                │                │
-                   ▼                ▼                ▼
-             Authentication      Diary API       AI Gateway
-                   │                │                │
-                   │                ▼                ▼
-                   │           PostgreSQL       LLM Provider
-                   │                │
-                   │                ▼
-                   │          Storage / Media
-                   │
-                   ▼
-             User Session
-🗄️ Data Model
-
-A simplified database design:
-
-erDiagram
-
-    USERS ||--o{ DIARY_ENTRIES : creates
-    USERS ||--o{ MEDIA : owns
-    USERS ||--o{ REMINDERS : creates
-    USERS ||--o{ AI_CONVERSATIONS : has
-    DIARY_ENTRIES ||--o{ MEDIA : contains
-    AI_CONVERSATIONS ||--o{ AI_MESSAGES : contains
-
-    USERS {
-        uuid id PK
-        string email
-        timestamp created_at
-    }
-
-    DIARY_ENTRIES {
-        uuid id PK
-        uuid user_id FK
-        string title
-        text content
-        timestamp entry_date
-        timestamp created_at
-        timestamp updated_at
-    }
-
-    MEDIA {
-        uuid id PK
-        uuid user_id FK
-        uuid diary_entry_id FK
-        string type
-        string storage_path
-        timestamp created_at
-    }
-
-    REMINDERS {
-        uuid id PK
-        uuid user_id FK
-        string title
-        timestamp scheduled_at
-        boolean completed
-    }
-
-    AI_CONVERSATIONS {
-        uuid id PK
-        uuid user_id FK
-        string mode
-        timestamp created_at
-    }
-
-    AI_MESSAGES {
-        uuid id PK
-        uuid conversation_id FK
-        string role
-        text content
-        timestamp created_at
-    }
-🔎 Intelligent Diary Search
-
-Diary search can operate at multiple levels.
-
-Traditional Search
-Query
-  │
-  ▼
-Keyword Search
-  │
-  ▼
-Database
-  │
-  ▼
-Matching Entries
-Semantic Search
-User Question
-      │
-      ▼
-Embedding
-      │
-      ▼
-Vector Search
-      │
-      ▼
-Relevant Diary Entries
-      │
-      ▼
-Context Builder
-      │
-      ▼
-AI Response
-
-This allows users to search by meaning, not only exact words.
-
-For example:
-
-"When was I feeling lonely?"
-
-can potentially find entries that never contain the exact word lonely.
-
-🧠 AI Context Pipeline
-sequenceDiagram
-
-    participant U as User
-    participant A as App
-    participant R as Retrieval
-    participant C as Context Builder
-    participant L as LLM
-
-    U->>A: Ask a question
-    A->>R: Search relevant diary entries
-    R-->>A: Relevant memories
-    A->>C: Build context
-    C->>L: Context + User Query
-    L-->>A: Response
-    A-->>U: AI Response
-⚡ Performance Principles
-
-Dear Diary is designed with performance in mind.
-
-Goals
-Fast initial rendering
-Lazy loading of media
-Optimized image handling
-Pagination for large diary collections
-Efficient database queries
-Cached frequently accessed data
-Background synchronization
-Minimal unnecessary network requests
-Streaming AI responses where supported
-Media Loading
-Entry Opened
-     │
-     ▼
-Load Text Immediately
-     │
-     ├───────────────┐
-     ▼               ▼
-Load Thumbnails   Load Metadata
-     │
-     ▼
-User Opens Media
-     │
-     ▼
-Load Full Resolution
-📂 Suggested Project Structure
-dear-diary/
-│
-├── app/
-│   ├── components/
-│   ├── screens/
-│   ├── navigation/
-│   ├── hooks/
-│   └── services/
-│
-├── features/
-│   ├── diary/
-│   ├── ai/
-│   ├── authentication/
-│   ├── media/
-│   ├── reminders/
-│   ├── profile/
-│   └── settings/
-│
-├── lib/
-│   ├── database/
-│   ├── storage/
-│   ├── security/
-│   ├── ai/
-│   └── utilities/
-│
-├── assets/
-│   ├── images/
-│   ├── icons/
-│   └── fonts/
-│
-├── backend/
-│   ├── api/
-│   ├── middleware/
-│   ├── services/
-│   └── ai/
-│
-├── database/
-│   ├── migrations/
-│   ├── functions/
-│   └── policies/
-│
-├── tests/
-│   ├── unit/
-│   ├── integration/
-│   └── e2e/
-│
-├── .env.example
-├── package.json
-└── README.md
-
-Adjust this structure according to the actual framework used by the project.
-
-🛠️ Technology Stack
-
-The project is designed to work with a modern application stack.
-
-Layer	Technology
-Frontend	Modern React / React Native / compatible UI
-Backend	API / Serverless architecture
-Database	PostgreSQL
-Authentication	Secure authentication provider
-Storage	Object storage
-AI	LLM API
-Search	Full-text + semantic search
-Security	RLS + authentication + biometric protection
-Notifications	Native/local notification system
-Version Control	Git + GitHub
-⚙️ Environment Configuration
-
-Create a local environment file:
-
-cp .env.example .env
-
-Example:
-
-DATABASE_URL=
-SUPABASE_URL=
-SUPABASE_ANON_KEY=
-
-AI_API_URL=
-AI_API_KEY=
-
-STORAGE_BUCKET=
-⚠️ Never commit secrets
-
-Do not commit:
-
-.env
-.env.local
-.env.production
-private keys
-service-role keys
-database passwords
-AI provider secret keys
-
-Use:
-
-.env.example
-
-for documenting required configuration.
-
-🚀 Installation
-1. Clone the repository
-git clone https://github.com/YOUR_USERNAME/dear-diary.git
-cd dear-diary
-2. Install dependencies
-npm install
-3. Configure environment variables
-cp .env.example .env
-
-Add the required credentials.
-
-4. Start development server
-npm run dev
-🧪 Testing
-
-Run unit tests:
-
-npm test
-
-Run linting:
-
-npm run lint
-
-Run type checking:
-
-npm run typecheck
-
-Run production build:
-
-npm run build
-
-For end-to-end testing:
-
-npm run test:e2e
-🔒 Security Checklist
-
-Before deploying to production:
-
-Authentication configured
-
-Database RLS enabled
-
-Storage policies configured
-
-User data isolation verified
-
-API keys removed from frontend
-
-Production secrets stored securely
-
-.env excluded from Git
-
-Debug logs removed
-
-Error messages sanitized
-
-HTTPS enabled
-
-Media access protected
-
-Session expiration configured
-
-Biometric lock tested
-
-Background locking tested
-
-File-picker workflow tested
-
-Database backups configured
-
-Rate limiting configured
-
-AI request abuse protection configured
-
-🧪 Critical Security Test Cases
-Authentication
-Login
-  ↓
-Authenticated
-  ↓
-Access own data
-  ↓
-Logout
-  ↓
-Data inaccessible
-Cross-user access
-User A
-  │
-  ├── Entry A ✓
-  │
-  └── Entry B ✗
-       ↑
-    User B's data
-App Lock
-App Open
-   ↓
-Unlock
-   ↓
-Use App
-   ↓
-Background App
-   ↓
-Lock
-   ↓
-Return
-   ↓
-Biometric Required
-Media Picker
-Diary Entry
-     ↓
-Open Picker
-     ↓
-Select Image
-     ↓
-Return to App
-     ↓
-Upload
-     ↓
-Save Entry
-
-The lock system should not incorrectly treat the temporary system picker as the user leaving the application.
-
-📊 Development Architecture
 flowchart TD
 
-    A[UI Layer] --> B[Feature Layer]
+    Q["User asks:<br/>When was I feeling lonely?"]
+    Q --> E["Semantic Understanding"]
+    E --> R["Diary Retrieval"]
+    R --> M1["Entry — Friendship"]
+    R --> M2["Entry — Isolation"]
+    R --> M3["Entry — Difficult Day"]
+    M1 --> C["Context Builder"]
+    M2 --> C
+    M3 --> C
+    C --> AI["AI Companion"]
+    AI --> A["Meaningful Response"]
 
-    B --> C[Application Services]
+This transforms a diary from a collection of pages into a searchable personal memory system.
 
-    C --> D[Repository Layer]
+💬 3. Talk to Your Diary — Without Losing the Diary
 
-    D --> E[(Database)]
+Dear Diary separates AI interaction into two clear experiences.
 
-    C --> F[Storage]
-
-    C --> G[AI Gateway]
+flowchart LR
 
-    G --> H[LLM Provider]
+    USER["👤 You"] --> AI["🤖 AI Companion"]
 
-    B --> I[Local Cache]
+    AI --> CHAT["💬 Talk to AI"]
+    AI --> SEARCH["🔎 Search My Diary"]
 
-    I --> J[Offline State]
+    CHAT --> CONVERSATION["Conversation"]
+    SEARCH --> MEMORIES["Your Memories"]
 
-    J --> C
+    CONVERSATION --> USER
+    MEMORIES --> USER
+💬 Talk to AI
 
-This separation helps keep UI code independent from database, storage, and AI-provider implementations.
+Use the companion for normal conversation, reflection, questions, or thoughts.
 
-🔌 AI Provider Abstraction
+🔎 Search My Diary
 
-The AI layer should ideally be provider-independent.
+Ask questions about things you previously wrote.
 
-                AI Service
-                    │
-          ┌─────────┴─────────┐
-          │                   │
-      Provider A          Provider B
-          │                   │
-          └─────────┬─────────┘
-                    ▼
-             Unified Interface
-                    │
-                    ▼
-              Dear Diary
+This distinction keeps conversation and memory retrieval separate.
 
-Example abstraction:
+🔐 4. Privacy Comes First
 
-interface AIProvider {
-  chat(messages: Message[]): Promise<AIResponse>;
+A diary can contain some of the most personal information a person owns.
 
-  generateReflection(
-    context: DiaryContext
-  ): Promise<AIResponse>;
+That means privacy isn't a feature added at the end.
 
-  searchRelevantEntries(
-    query: string
-  ): Promise<DiaryEntry[]>;
-}
+It is part of the architecture.
 
-This allows the application to change AI providers without rewriting the entire application.
+flowchart TD
 
-🧩 Feature Modules
-Module	Responsibility
-Diary	Create, edit and manage entries
-AI Companion	Conversations and reflections
-Diary Search	Search personal memories
-Media	Images, audio and video
-Authentication	User sessions
-App Lock	Biometric/privacy protection
-Reminders	Diary notifications
-Letter to God	Reflective writing
-Profile	User information
-Settings	Application configuration
-Developer Mode	Advanced diagnostics
-Backup	Data protection and recovery
-📱 User Experience
+    USER["👤 User"]
 
-Dear Diary aims to maintain a calm, personal interface rather than feeling like an enterprise dashboard.
+    USER --> AUTH["🔑 Authentication"]
+    AUTH --> LOCK["🔒 Biometric / App Lock"]
+    LOCK --> ACCESS["🛡️ Authorized Access"]
+    ACCESS --> RLS["Database Authorization"]
+    RLS --> DATA["📖 Personal Diary Data"]
 
-UX Principles
-Minimal visual noise
-Clear navigation
-Fast interactions
-Personal typography
-Meaningful animations
-Accessible controls
-Privacy-first interactions
-No unnecessary complexity
+    ACCESS --> STORAGE["📸 Protected Media"]
+    ACCESS --> AI["🤖 Controlled AI Access"]
+Security goals
+🔐 Authentication
+👤 User-specific data isolation
+🛡️ Database-level authorization
+🔒 Biometric protection
+📸 Protected media
+🔑 Secure API-key management
+🚫 No privileged secrets in the client
+🔄 Secure synchronization
+🧪 Security-focused testing
+📸 5. Memories Are More Than Words
 
-The interface should feel like opening a personal journal, not opening a database.
+Some memories deserve more than a paragraph.
 
-🌙 Design Direction
+Dear Diary can bring together:
 
-The visual identity can combine:
+        ┌─────────────────────────┐
+        │       📖 MEMORY         │
+        ├─────────────────────────┤
+        │                         │
+        │  📝 What I wrote        │
+        │                         │
+        │  📸 What I saw          │
+        │                         │
+        │  🎙️ What I said        │
+        │                         │
+        │  🎥 What I recorded     │
+        │                         │
+        │  📅 When it happened    │
+        │                         │
+        └─────────────────────────┘
 
-Modern
-   +
-Vintage
-   +
-Poetic
-   +
-Minimal
-   +
-Personal
+One entry can become a complete snapshot of a moment.
 
-Suggested visual language:
+🙏 6. A Space for Things You Don't Usually Say
 
-Soft typography
-Journal-inspired layouts
-Subtle transitions
-Paper/card metaphors
-Elegant spacing
-Dark mode
-Warm personal atmosphere
-🧑‍💻 Developer Mode
+Dear Diary includes the concept of Letter to God — a dedicated private space for thoughts that may not belong in an ordinary diary entry.
 
-Developer Mode is intended for debugging and advanced diagnostics.
+flowchart LR
 
-It should be:
+    L["🙏 Letter to God"]
 
-Explicitly opt-in
-Clearly explained
-Disabled by default
-Separate from normal user settings
+    L --> A["Wish"]
+    L --> B["Dream"]
+    L --> C["Prayer"]
+    L --> D["Loss"]
+    L --> E["Hope"]
+    L --> F["Question"]
+    L --> G["Confession"]
+    L --> H["Guilt"]
+    L --> I["Just a Talk"]
 
-Potential diagnostics:
+The goal is to give reflective writing its own meaningful space rather than treating everything as another generic note.
 
-App Version
-Database Status
-Storage Status
-AI Provider Status
-Network Status
-Sync Status
-Cache Status
-Debug Logs
+📅 7. Remember to Write
 
-Developer Mode must never silently expose sensitive diary content or credentials.
+Life gets busy.
 
-🛣️ Roadmap
-Phase 1 — Foundation
+Dear Diary can help users maintain the habit of journaling through reminders.
 
-Diary entries
+flowchart LR
 
-Authentication
+    CREATE["📅 Create Reminder"]
+    CREATE --> NOTIFY["🔔 Notification"]
+    NOTIFY --> DECISION{"What do you do?"}
 
-Basic AI companion
-
-Rich media
-
-Profile
-
-App lock
-
-Phase 2 — Intelligence
-
-Semantic diary search
-
-Better context retrieval
-
-AI reflections
-
-Entry summarization
-
-Personal memory system
-
-Smart tagging
-
-Phase 3 — Privacy
-
-Stronger local encryption
-
-Secure media handling
-
-Advanced session controls
-
-Improved secret management
-
-Privacy audit
-
-Security testing
-
-Phase 4 — Personalization
-
-Custom AI companion personality
-
-Custom themes
-
-Writing statistics
-
-Mood/reflection analytics
-
-Personal insights
-
-Memory timeline
-
-Phase 5 — Advanced Platform
-
-End-to-end encrypted synchronization
-
-Secure backup
-
-Cross-device synchronization
-
-Offline-first architecture
-
-AI model switching
-
-Local AI support
-
-Plugin architecture
-
-📈 Future AI Capabilities
-
-Potential future capabilities include:
-
-                    ┌───────────────┐
-                    │  AI Companion │
-                    └───────┬───────┘
-                            │
-       ┌────────────┬───────┼────────┬────────────┐
-       ▼            ▼       ▼        ▼            ▼
-   Search        Reflect  Summarize  Recall     Organize
-       │            │       │        │            │
-       └────────────┴───────┼────────┴────────────┘
-                            ▼
-                    Personal Insight
-
-The goal is not simply to make AI generate text.
-
-The goal is to make AI useful around the user's own memories and writing.
-
-🌐 Open Source
-
-Dear Diary is intended to encourage experimentation around:
-
-Personal AI
-Privacy-first applications
-Digital journaling
-AI memory systems
-Semantic search
-Personal knowledge management
-Secure media storage
-
-Contributions, suggestions, bug reports and architectural discussions are welcome.
-
-🤝 Contributing
-Fork the repository
-Create a feature branch
-git checkout -b feature/my-new-feature
-Make your changes
-Run tests
-npm test
-Commit your changes
-git commit -m "feat: add new diary feature"
-Push the branch
-git push origin feature/my-new-feature
-Open a Pull Request
-🐛 Bug Reports
-
-When reporting a bug, please include:
-
-Environment:
-Device:
-OS:
-App Version:
-
-Expected behavior:
-Actual behavior:
-
-Steps to reproduce:
-1.
-2.
-3.
-
-Screenshots / logs:
-
-Never include:
-
-Passwords
-API keys
-Authentication tokens
-Private diary content
-Personal documents
-Database credentials
-💡 Feature Requests
-
-Before opening a feature request, consider:
-
-What problem does it solve?
-Who benefits from it?
-Does it improve the diary experience?
-Does it introduce privacy concerns?
-Can it work offline?
-Does it increase unnecessary complexity?
-📜 License
-
-Choose and add an appropriate open-source license before publishing the repository.
-
-For example:
-
-MIT License
-
-or another license depending on the project's intended usage and distribution model.
-
-❤️ Philosophy
-
-A diary remembers what you write.
-Dear Diary is built to help you understand why you wrote it.
-
-Technology should not replace personal reflection.
-
-It should create a safer and more meaningful space for it.
-
-Dear Diary is built around a simple idea:
-
-Write.
-Remember.
-Reflect.
-Understand.
-Grow.
-⭐ Support the Project
-
-If you find Dear Diary interesting:
-
-⭐ Star the repository
-🐛 Report bugs
-💡 Suggest features
-🔧 Contribute code
-📖 Improve documentation
-🗣️ Share feedback
-
-📌 Project Status
-
-Development Status: Active Development 🚧
-
-Dear Diary is continuously evolving. Features, architecture, APIs and UI may change as development progresses.
+    DECISION -->|Done| DONE["✅ Done"]
+    DECISION -->|Later| SNOOZE["⏰ Snooze 10 min"]
+    SNOOZE --> NOTIFY
+🧩 Dear Diary at a Glance
+graph TD
+
+    DD["📖 DEAR DIARY"]
+
+    DD --> J["📝 Journaling"]
+    DD --> AI["🤖 AI Companion"]
+    DD --> S["🔎 Smart Search"]
+    DD --> P["🔐 Privacy"]
+    DD --> M["📸 Rich Memories"]
+    DD --> R["📅 Reminders"]
+    DD --> G["🙏 Letter to God"]
+
+    J --> J1["Write"]
+    J --> J2["Edit"]
+    J --> J3["Organize"]
+
+    AI --> A1["Talk"]
+    AI --> A2["Reflect"]
+    AI --> A3["Understand"]
+
+    S --> S1["Keyword"]
+    S --> S2["Semantic"]
+    S --> S3["Memory Retrieval"]
+
+    P --> P1["Biometric"]
+    P --> P2["Authorization"]
+    P --> P3["Secure Storage"]
+🌱 Built Around a Simple Idea
+
+Technology should not replace reflection.
+
+It should make reflection easier.
+
+             WRITE
+               ↓
+            REMEMBER
+               ↓
+             SEARCH
+               ↓
+             REFLECT
+               ↓
+           UNDERSTAND
+               ↓
+             GROW
+
+Dear Diary isn't just where you write what happened.
+
+It's a private space to understand what it meant.
+
+🚀 Project Overview
+
+Dear Diary is a privacy-focused AI-powered digital diary designed to combine traditional journaling with modern AI capabilities.
+
+It provides:
+
+📝 Personal journaling
+🤖 AI companion
+🔎 Semantic diary search
+📸 Rich media memories
+🔐 Biometric/app protection
+📅 Reminders
+🙏 Letter to God
+👤 Personal profile
+🌙 Reflection-oriented UX
+🛡️ Privacy-focused architecture
+
+The project is actively evolving toward a personal AI + private memory system, rather than simply another notes application.
+
+🏗️ High-Level Architecture
+flowchart TB
+
+    USER["👤 User"]
+
+    USER --> APP["📱 Dear Diary"]
+
+    APP --> AUTH["Authentication"]
+    APP --> DIARY["Diary Engine"]
+    APP --> AI["AI Companion"]
+    APP --> MEDIA["Media Manager"]
+    APP --> LOCK["Security Layer"]
+    APP --> REMINDERS["Reminder Engine"]
+
+    DIARY --> DB[("PostgreSQL")]
+    MEDIA --> STORAGE[("Secure Storage")]
+
+    AI --> RETRIEVAL["Memory Retrieval"]
+    RETRIEVAL --> DB
+    AI --> LLM["LLM Provider"]
+
+    LOCK --> AUTH
+    REMINDERS --> LOCAL["Local Notification System"]
+
+    DB --> RLS["Row Level Security"]
+🛠️ Technology
+Layer	Purpose
+Frontend	User interface and application experience
+PostgreSQL	Diary and application data
+Authentication	Identity and sessions
+Object Storage	Images, audio and video
+AI Gateway	Secure AI communication
+LLM	Conversation and reasoning
+Semantic Search	Personal memory retrieval
+Local Notifications	Diary reminders
+GitHub	Source control and collaboration
+📊 Product Vision
+                 ┌───────────────────────┐
+                 │     DEAR DIARY        │
+                 └───────────┬───────────┘
+                             │
+          ┌──────────────────┼──────────────────┐
+          │                  │                  │
+          ▼                  ▼                  ▼
+      PERSONAL            PRIVATE            INTELLIGENT
+       MEMORY              SPACE              COMPANION
+          │                  │                  │
+          └──────────────────┼──────────────────┘
+                             ▼
+                    PERSONAL REFLECTION
+                             │
+                             ▼
+                       🌱 SELF-UNDERSTANDING
+❤️ The Philosophy
+
+Write what you feel.
+Keep what you remember.
+Ask what you forgot.
+Reflect on what you lived.
+
+Dear Diary is built around the belief that personal technology should feel personal.
+
+Not noisy.
+
+Not complicated.
+
+Not invasive.
+
+Just a quiet digital space for your story.
+
+🚧 Development Status
+
+Active Development
+
+The project is continuously evolving. Architecture, features, APIs, UI, and AI capabilities may change as development progresses.
 
 👨‍💻 Author
 
