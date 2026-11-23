@@ -1,182 +1,262 @@
-# Dear Diary — Expanded Feature Atlas (v1.3.1)
+# 📔 Dear Diary — Vintage Frosted Glass Journal & AI Companion
 
-> A private, offline-first vintage journal and personal memory companion.
+[![GitHub stars](https://img.shields.io/github/stars/B-max12/dear_diary?style=for-the-badge&color=D4AF37)](https://github.com/B-max12/dear_diary)
+[![Flutter Version](https://img.shields.io/badge/Flutter-3.24+-02569B?style=for-the-badge&logo=flutter&logoColor=white)](https://flutter.dev)
+[![Release](https://img.shields.io/badge/Release-v5.0.0-8B5A2B?style=for-the-badge)](https://github.com/B-max12/dear_diary/releases)
+[![License](https://img.shields.io/badge/License-MIT-2E7D32?style=for-the-badge)](LICENSE)
+[![Platform](https://img.shields.io/badge/Platform-Android%208+%20|%20iOS%20|%20Desktop-4A154B?style=for-the-badge)](https://github.com/B-max12/dear_diary)
 
-## Product description
+> **A tranquil, privacy-first personal sanctuary crafted with frosted glassmorphism, 31 StoryPad structured writing templates, real-time device-to-device (D2D) sync, WhatsApp-style Google Drive cloud backup, 15 dynamic launcher icons, 25 ambient relaxation tracks, lifetime wax seal locking, and Safina AI reflection.**
 
-Dear Diary combines expressive writing, memory archiving, visual reflection, map-based storytelling, privacy tools, and optional cloud services in a vintage-inspired Flutter experience. The product is designed to help people capture everyday moments and preserve a lasting personal record.
+Repository: [https://github.com/B-max12/dear_diary.git](https://github.com/B-max12/dear_diary.git)
 
-## Feature directory — one-line names
+---
 
-1. Today’s Dashboard
-2. Rich Diary Editor
-3. Lifetime Stamping System
-4. Interactive Map Picker
-5. Entry Library & Search
-6. Category & Mood Manager
-7. Archival Timeline
-8. Single-Page Statistics
-9. Mood Intelligence
-10. Emotion Arc & Resilience
-11. Life Correlator
-12. Sunday Summary
-13. Time Mirror
-14. World Map & Footsteps
-15. Global Location Search
-16. Multi-Modal Routing Engine
-17. Turn-by-Turn GPS Navigation
-18. Spoken Voice Guidance (TTS)
-19. Google Sign-In
-20. Google Calendar Sync
-21. Gmail Digest Dispatcher
-22. Cloud Supabase Sync
-23. Voice Journal
-24. Photo Album
-25. Video Library
-26. Biometric App Lock
-27. Wax Seal Workshop
-28. E2EE Cloud Backup
-29. Gratitude Jar
-30. Time Capsules
-31. Letters to God
-32. Dream Journal
-33. Circle of Trust (@Mentions)
-34. Routine & Habit Tracker
-35. Reminders & Smart Alarms
-36. AUR LABs Ecosystem
+## 📸 Visual Showcase & Interface Preview
 
-## Detailed features
+<p align="center">
+  <img src="assets/images/diary_display.jpg" alt="Dear Diary Hero Showcase" width="100%" />
+</p>
 
-### 🖋️ Core Journaling & Writing
+| 📱 Frosted Glass Timeline | 📝 StoryPad Templates | 🎨 Customization Studio |
+| :---: | :---: | :---: |
+| ![Timeline Preview](docs/screenshots/home_timeline.jpg) | ![Templates Preview](docs/screenshots/templates_sheet.jpg) | ![Customization Preview](docs/screenshots/customizations.jpg) |
 
-#### 1. Today’s Dashboard
-Daily overview featuring daily quote inspiration, mood check-in, recent memories, and prompt suggestions.
+| ✍️ Docked Rich Text Editor | 🎵 Ambient Sounds Mixer | ☁️ WhatsApp-Style Backup |
+| :---: | :---: | :---: |
+| ![Editor Preview](docs/screenshots/editor_toolbar.jpg) | ![Sounds Preview](docs/screenshots/relaxing_sounds.jpg) | ![Backup Preview](docs/screenshots/data_backup.jpg) |
 
-#### 2. Rich Diary Editor
-WYSIWYG rich text editor with fountain pen ink styles, vintage paper parchment textures, and formatting.
+---
 
-#### 3. Lifetime Stamping System
-Permanently stamp entries with a wax seal badge at the bottom of the page, rendering them permanently read-only.
+## ✨ Key Highlights in v5.0.0
 
-#### 4. Interactive Map Picker
-Tap the toolbar pin to open an interactive full-screen map, search cities or drop pins, and save coordinates.
+- 🪟 **Complete Frosted Glassmorphism UI**: High-fidelity optical blurs (`BackdropFilter`), dual-mode translucent gradient containers (light & dark parchment glass), subtle specular rim highlights, and tactile 3D polymorphic buttons.
+- 📋 **StoryPad Writing Templates Suite (31 Templates across 7 Categories)**: Instant structured prompt sheets for *Daily Reflection*, *Gratitude*, *Productivity*, *Wellness*, *Creative*, *Travel*, and *Special Days*. Seamless 1-tap insert & replace in the editor.
+- ⚡ **Real-Time Device-to-Device (D2D) Sync**: Type on your phone and see your text update simultaneously on desktop in real-time over Wi-Fi and mobile data via Supabase Realtime broadcast channels.
+- 💾 **WhatsApp-Style Full Cloud Backup & Restore**: Effortless 1-tap GZip-compressed backup to your private Google Drive `appDataFolder`. Restores every entry, tag, mood, photo, voice note, video, document, Gratitude Jar, and Time Capsule exactly as you left it.
+- 📱 **15 Custom App Launcher Icons & Live App Renaming**: Choose from 15 custom handcrafted icon designs and custom app names that immediately update your Android home screen launcher via dynamic `<activity-alias>` switches.
+- 🪟 **Android 8+ Floating Window & Split-Screen Multi-Tasking**: Fully responsive layout optimized for multi-window and floating popups without blank screen rendering glitches (Impeller disabled on floating surfaces).
+- 🪶 **Optimized APK Footprint**: Losslessly compressed from 205MB down to **108.5MB** through automated palette-optimized GIF encoding and asset pruning.
+- 🎵 **25-Track StoryPad Relaxing Sounds & Mixer**: Layer rain, forest birds, wind chimes, waves, and campfire with individual volume sliders, sleep timer, and live floating music pill.
+- 🔒 **Zero-Knowledge Privacy & Lifetime Wax Seal Stamping**: AES-256 client-side encryption for confidential notes and physical wax seal simulation that permanently locks pages into immutable read-only records.
 
-#### 5. Entry Library & Search
-Full-text indexed search across all past entries with filtering by category, date, mood, and tag.
+---
 
-#### 6. Category & Mood Manager
-Color-coded organization system for Personal, Travel, Work, Dreams, Spiritual, and custom notebook sections.
+## 🎨 AI Screenshot Generation Prompts
 
-#### 7. Archival Timeline
-Continuous chronological stream of entries rendered like a vintage chronicle scroll through your life's chapters.
+Want to generate high-resolution mockups to include in your repository's `docs/screenshots/`? Use these exact, professionally engineered image prompts in Midjourney, DALL-E 3, or Flux:
 
-### 📊 Insights & Single-Page Dashboard
+<details>
+<summary><b>Click to expand AI prompts for all 10 core screens</b></summary>
 
-#### 8. Single-Page Statistics
-Viewport-fitted, non-scrollable dashboard showing total entries, streaks, words, category breakdown, and mood distribution.
+### 1. Home Timeline (Glassmorphic Vintage)
+> `Modern Android smartphone mockup, displaying a calm personal journal app interface called 'Dear Diary'. Beautiful frosted glassmorphism aesthetic with translucent glass cards, BackdropFilter blur, soft warm cream paper texture underneath, delicate gold rim borders, subtle diffuse shadows. Displaying today's entries with animated mood emojis, glowing day-color indicator strips, and floating tactile 3D glass action buttons. Warm parchment aesthetic meets ultra-clean luxury UI design, 8k resolution, photorealistic studio lighting, Behance trending UI/UX.`
 
-#### 9. Mood Intelligence
-Deep psychological breakdown of your emotional patterns, valence, arousal, and dominant mood frequencies.
+### 2. StoryPad Writing Templates Sheet
+> `Mobile app bottom modal sheet UI mockup showing a StoryPad-inspired 'Writing Templates' gallery. Sleek frosted glass background with high blur, category filter chips (Daily Reflection, Gratitude, Growth, Wellness, Creative, Travel, Special Days) with pastel glow. Glass cards displaying template cards with hand-drawn line-art emojis, titles like '5-Minute Journal', 'Evening Wind-Down', and 'Weekly Review', with neat tonal 'Use Template' action buttons. Elegant typography, clean typography, luxury iOS and Android design.`
 
-#### 10. Emotion Arc & Resilience
-Visual wave-chart showing your emotional trajectory and sentiment shifts across weeks and months.
+### 3. Entry Editor with Docked Glass Toolbar
+> `Close-up shot of a smartphone running a vintage digital diary editor. Vintage lined cream paper background with handwritten serif font. A bottom docked frosted glass toolbar floats right above the digital keyboard, containing glossy tactile icons for Bold, Italic, 2-Tier Color Picker, Unified Media (Camera, Mic, Video, Document), Wax Seal Stamp, and GPS Location Pin. Translucent amber and slate accents, crisp high-end product render.`
 
-#### 11. Life Correlator
-Cross-correlates external habits (sleep, exercise, routine, spiritual practice) with your happiness index.
+### 4. 2-Tier 100-Shade Color Palette Sheet
+> `Smartphone screen displaying an innovative 2-tier color picker sheet. Frosted glass card showing 10 base color family circles (Black, Crimson Red, Tangerine Orange, Amber Gold, Forest Green, Teal, Sapphire Blue, Purple, Soft Rose, Sepia Brown). Directly underneath, a horizontal row of 10 calibrated shades of the selected family from light tint to deep shade. Minimalist, modern UI design, Apple Human Interface inspired.`
 
-#### 12. Sunday Summary
-Automated weekly Sunday retrospective synthesizing your triumphs, struggles, and personal growth lessons.
+### 5. Relaxing Ambient Sounds Mixer
+> `A dark-mode mobile UI bottom sheet for 'Relaxing Sounds' with a cozy ambient aesthetic. Grid of frosted translucent square tiles with minimalist icons for Rain, Cicada, Forest Birds, Wind Chime, Singing Bowl, and Campfire. Active tracks have a glowing amber rim and smooth volume slider underneath. Header shows a floating music note pill and sleep timer button (15m, 30m, 45m). Cozy night vibe, warm lighting, Figma showcase render.`
 
-#### 13. Time Mirror
-Reflective tool showing what you were thinking, feeling, and journaling exactly 1 month, 1 year, or 5 years ago.
+### 6. Customization Studio & 15 Launcher Icons
+> `Smartphone settings screen titled 'Customizations'. Featuring an interactive 4-column responsive grid showcasing 15 different app launcher icons (Botanical Sage, Vintage Leather, Aurora Glass, Cyberpunk Neon, Starry Sky, Classic Parchment, Emerald Luxe). Includes sleek segment controls for Theme Mode (Light, Dark, System Default with split sun/moon icon) and Font Family selections. Clean, tactile, polished design.`
 
-### 🗺️ World Maps, GIS & Navigation (Free & Open Source)
+### 7. 3D Wax Seal Workshop & Gratitude Jar
+> `Split view of two signature keepsake features in a mobile diary app: On the left, an antique glass Gratitude Jar filled with tied parchment scrolls that roll and drop into the jar. On the right, a 3D Wax Seal workshop where molten red and burgundy wax is stamped with an ornate monogram seal badge to permanently lock an entry forever. Tangible, nostalgic, vintage luxury craftsmanship, photorealistic.`
 
-#### 14. World Map & Footsteps
-Full-screen vector world map rendering all your geotagged memories as interactive pins with OpenFreeMap styles.
+### 8. WhatsApp-Style Google Drive Backup & Storage Management
+> `Smartphone settings screen for 'Data & Cloud Backup'. Clean card with official Google Drive logo, animated sync status badge, last backup timestamp, and a segmented storage bar showing Local Database (Drift SQLite), Voice Notes, Photos, and Videos. Two tactile glass buttons: 'Back Up Now' (cloud upload icon) and 'Restore Backup'. Security badge below: 'Zero-Knowledge End-to-End Encryption'. Trustworthy, modern fintech-grade UX.`
 
-#### 15. Global Location Search
-High-speed debounced place and landmark autocomplete powered by Komoot's Photon search engine.
+### 9. World Footsteps Map & GPS Journey
+> `Full-screen mobile app interface displaying a vintage-style illustrated world map with custom warm-toned pins marking diary memories. A transparent frosted glass app bar floats on top with a search field and a map style switcher (Streets / Vintage Satellite / Terrain). Bottom card previews the memory pinned at that location with a photo thumbnail, date, and journal snippet. Adventure, travel log, National Geographic inspired.`
 
-#### 16. Multi-Modal Routing Engine
-OSRM routing calculating turn-by-turn routes for Driving (Car), Walking (Pedestrian), and Cycling (Bicycle).
+### 10. Safina AI Companion Chat Screen
+> `Conversational AI reflection screen named 'Safina'. Calm, poetic chat interface with soft warm message bubbles, gentle serif typography, and reflective prompts like 'How did today feel in your heart?'. Frosted glass input bar at the bottom with fountain pen write icon. No coding, no robotic elements; feels like confiding in a wise, timeless lifelong mentor. Serene, emotional wellbeing, Behance top design.`
 
-#### 17. Turn-by-Turn GPS Navigation
-Live turn-by-turn guidance screen featuring real-time speedometer, heading-aligned 3D compass camera, and ETA countdown.
+</details>
 
-#### 18. Spoken Voice Guidance (TTS)
-Text-To-Speech audio announcements ("In 200 meters, turn left") with anti-spam cooldown and one-tap mute.
+---
 
-### ☁️ Google Cloud & Supabase Integration
+## 🏗️ Technical Architecture
 
-#### 19. Google Sign-In
-One-tap native OAuth login and registration exchanging Google credentials with Supabase Auth.
+Dear Diary is engineered from the ground up for **extreme offline resilience, multi-platform fluidity, and uncompromising privacy**:
 
-#### 20. Google Calendar Sync
-Two-way calendar integration displaying your Google events directly on the diary's calendar view.
+```
+┌────────────────────────────────────────────────────────────────────────┐
+│                        Dear Diary Client (Local)                       │
+│                                                                        │
+│   Flutter UI Layer (Frosted Glassmorphism, Quill Editor, 3D Docks)     │
+│        │                                                               │
+│        ▼                                                               │
+│   Riverpod State Layer (Customizations, SyncEngine, RelaxingSounds)    │
+│        │                                                               │
+│        ▼                                                               │
+│   Local SQLite Database (Drift Engine) ◄── PRIMARY SOURCE OF TRUTH    │
+│   Local Media Storage   (Encrypted / Scaled Filesystem Cache)          │
+└───────────────────┬───────────────────────────────┬────────────────────┘
+                    │                               │
+        Realtime Keystroke CDC           GZip Full Snapshot Sync
+                    │                               │
+                    ▼                               ▼
+      ┌───────────────────────────┐   ┌───────────────────────────┐
+      │  Supabase Cloud (Remote)  │   │     Google Drive Cloud    │
+      │  • Hardware-backed JWT    │   │  • appDataFolder Sandbox  │
+      │  • Realtime Broadcast     │   │  • Encrypted .json.gz     │
+      │  • Row Level Security     │   │  • Zero-Quota Footprint   │
+      └───────────────────────────┘   └───────────────────────────┘
+```
 
-#### 21. Gmail Digest Dispatcher
-Automatically draft and email weekly diary highlights, gratitude summaries, and PDF exports via the Gmail API.
+### Architectural Principles:
+1. **Local-First Supremacy**: Every keystroke, photo, voice recording, and tag is instantly written to local SQLite via Drift and the device filesystem. The app opens and functions instantly with zero network connectivity.
+2. **Real-Time Cross-Device Broadcasting**: Uses Supabase Realtime WebSocket broadcast channels to reflect drafts and committed edits across phones and desktops instantaneously.
+3. **WhatsApp-Style Portable Cloud Snapshots**: Full diary state (entries, tags, moods, attachments, jars, time capsules, and settings) is bundled into compact GZip `.json.gz` archives and stored in your own Google Drive application sandbox.
+4. **Permanent Immutability**: Wax-sealed records cannot be edited or altered after stamping, guaranteed both locally in SQLite and remotely via PostgreSQL triggers.
 
-#### 22. Cloud Supabase Sync
-Offline-first synchronization engine with PostgreSQL triggers enforcing lifetime immutability on stamped records.
+---
 
-### 🎙️ Multi-Modal Media Archiving
+## 📂 Project Structure
 
-#### 23. Voice Journal
-Dedicated audio recorder for spoken stream-of-consciousness thoughts with live waveform and playback scrubbers.
+```
+dear_diary/
+├── android/                  # Android native project, activity-aliases & manifest
+├── assets/
+│   ├── app_icons/            # 15 custom launcher icon assets
+│   ├── icons/                # Compressed animated GIF icon collection (4.1MB)
+│   ├── images/               # Paper textures, wax seals, and illustrations
+│   └── sounds/               # Bundled offline ambient sound fallbacks
+├── lib/
+│   ├── core/                 # Routing, theme, localization, constants, and utilities
+│   ├── data/                 # Drift SQLite database, repositories, and sync engine
+│   ├── domain/               # Entities (WritingTemplate, Customizations, Entries)
+│   ├── presentation/
+│   │   ├── controllers/      # Riverpod controllers & state notifiers
+│   │   ├── providers/        # Dependency injection & reactive providers
+│   │   ├── screens/
+│   │   │   ├── diary/        # Entry editor & entry list screens
+│   │   │   ├── home/         # HomeShell, bottom bar dock & TodayScreen
+│   │   │   ├── map/          # World Footsteps interactive map
+│   │   │   ├── settings/     # Customizations, Data & Backup, Storage screens
+│   │   │   └── templates/    # StoryPad Templates Hub & Custom Editor
+│   │   └── widgets/          # Glassmorphic EntryCard, Toolbar, Sound mixer, Sheets
+│   └── services/             # Audio, AI (Safina), Google Drive, and Security
+├── test/                     # Unit, widget, and integration test suites
+└── pubspec.yaml              # Dependencies and asset declarations
+```
 
-#### 24. Photo Album
-Pure Dart image compression engine creating thumbnail grids and full-screen lightbox galleries.
+---
 
-#### 25. Video Library
-Video diary recorder and player to capture moving memories and milestone moments.
+## 🚀 Getting Started & Installation
 
-### 🛡️ Security, Privacy & Crafts
+### Prerequisites
+- **Flutter SDK**: `>= 3.24.0`
+- **Dart SDK**: `>= 3.5.0`
+- **Android SDK**: `API Level 26+` (Android 8.0 Oreo or higher)
 
-#### 26. Biometric App Lock
-Biometric lock (fingerprint/face recognition) and master PIN lock protecting the application on launch.
+### Setup Instructions
 
-#### 27. Wax Seal Workshop
-Interactive digital wax seal crafter that lets you design personalized sigils and sheen finishes.
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/B-max12/dear_diary.git
+   cd dear_diary
+   ```
 
-#### 28. E2EE Cloud Backup
-Client-side AES-GCM-256 backup snapshots with 12-word BIP-39 mnemonic phrase recovery.
+2. **Install Flutter dependencies**:
+   ```bash
+   flutter pub get
+   ```
 
-### ⏰ Life Routine, Spirit & Legacy
+3. **Verify analyzer health**:
+   ```bash
+   flutter analyze
+   ```
+   *(Ensure 0 warnings and 0 errors).*
 
-#### 29. Gratitude Jar
-Transparent glass mason jar with cork-engraved title to drop and view origami scrolls of gratitude.
+4. **Run the test suite**:
+   ```bash
+   flutter test
+   ```
 
-#### 30. Time Capsules
-Sealed digital capsules that remain locked until a designated future anniversary, birthday, or graduation date.
+5. **Run the app locally**:
+   ```bash
+   flutter run
+   ```
 
-#### 31. Letters to God
-A sacred sanctuary for personal prayers with optional lifetime wax stamping.
+### 📦 Building Release APK
 
-#### 32. Dream Journal
-Specialized morning log for recording dreams, sleep quality, recurring symbols, and lucid insights.
+To generate the production release APK (optimized under 120MB):
 
-#### 33. Circle of Trust (@Mentions)
-Personal directory documenting key relationships, birthdays, milestones, and memorable conversations.
+```bash
+flutter build apk --release
+```
 
-#### 34. Routine & Habit Tracker
-Daily checklist and rhythm keeper to cultivate mindful morning and evening habits.
+The compiled APK will be located at:
+```
+build/app/outputs/flutter-apk/app-release.apk
+```
 
-#### 35. Reminders & Smart Alarms
-Exact notifications prompting you to write, breathe, and reflect at your chosen hours.
+---
 
-#### 36. AUR LABs Ecosystem
-Official portal link to download and explore companion apps from [AUR LABs]\(https\://aurlabs.online/).
+## 📜 Complete Feature Catalog
 
-## Interactive graphs and exploration
+<details>
+<summary><b>Click to expand the 12 feature suites in Dear Diary</b></summary>
 
-Open **Dear_Diary_Interactive_Product_Atlas.html** for searchable feature cards, category filters, interactive feature distribution charts, and a copyable feature index. Charts summarize documented feature counts, not actual user activity.
+### 1. 🖋️ Core Journaling & Frosted Glass Dashboard
+- **Glassmorphic Timeline**: Chronological memory feed with frosted glass cards, day-color glows, and smooth scroll retention.
+- **StoryPad Writing Templates**: 31 pre-built structured templates across 7 categories (Daily Reflection, Gratitude, Growth, Wellness, Creative, Travel, Special Days) with 1-tap insert and replace.
+- **Bottom Docked RichTextToolbar**: Docked right above the mobile keyboard with Bold, Italic, Underline, Strikethrough, Heading styles, Quotes, Checklists, Undo/Redo, and 100-shade color picker.
+- **Unified Media Attachment**: Single button to embed Photos, Voice Notes, High-Res Videos, and Documents (PDF, Word, Excel, TXT) inline into entries.
 
-## Technology architecture
+### 2. 🎵 25-Track Ambient Sound Studio
+- **Curated Atmosphere**: Rain, Thunderstorm, Ocean Waves, Stream, Forest Birds, Night Crickets, Wind Chime, Singing Bowl, Campfire, Old Café, White Noise, and more.
+- **Multi-Track Mixing**: Play up to 5 tracks simultaneously with custom volume levels per track.
+- **Sleep Timer**: Auto-fade timers (15m, 30m, 45m, 60m) with live countdown in the floating header pill.
 
-Flutter / Dart → Riverpod & GoRouter → repositories → Drift SQLite ↔ Supabase. MapLibre, OpenFreeMap, Photon, and OSRM provide mapping and routing services.
+### 3. 🏺 Keepsakes & Nostalgia
+- **Gratitude Jar**: Animated tied parchment scroll drops into an antique jar; jars automatically seal at 200 notes onto a wooden Past Jars shelf.
+- **Time Capsules**: Letters to your future self with countdown timer, wax seal lock, and threaded reply upon unlocking.
+- **Letters to God / Universe**: Spiritual reflections encrypted client-side with zero-knowledge AES-256 ciphers.
+- **Lifetime Wax Seal Stamping**: Permanently lock any entry into an uneditable archival heirloom with a vintage wax badge.
 
-## Implementation caveat
+### 4. 🧭 World Footsteps Map & Navigation
+- **Interactive Offline Map**: Search places, drop coordinates, and tag diary memories to real-world locations.
+- **Memory Hotspots**: Visual cluster markers showing where life's stories occurred around the globe.
 
-This documentation reflects the supplied project description; individual capabilities, integrations, security guarantees, and deployment readiness have not been independently verified.
+### 5. 🤖 Safina AI Life Companion
+- **Empathetic Mentor Persona**: Private reflections tailored to your journal context without ever providing robotic or coding responses.
+- **Emotional Wave Arc**: Visual mood tracking, psychological valence patterns, and habit-happiness correlations.
+
+### 6. 📱 Customizations & Personalization
+- **15 App Launcher Icons**: Botanical Sage, Espresso Leather, Aurora Glass, Cyberpunk Neon, Starry Sky, and more that change live on your phone.
+- **Custom App Name**: Disguise or rename your diary on your home screen.
+- **Typography Suite**: Multiple font families (Classic Serif, Modern Sans, Vintage Mono), font weights, and adjustable sizing.
+- **Day Colors**: Custom accent tints for every day of the week (Monday through Sunday).
+
+</details>
+
+---
+
+## 🤝 Contributing
+
+Contributions, bug reports, and suggestions are welcome!
+1. Fork the Project.
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`).
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`).
+4. Push to the Branch (`git push origin feature/AmazingFeature`).
+5. Open a Pull Request.
+
+---
+
+## 📄 License & Credits
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+- **Developer & Creator**: Awab Hamdan / [AUR LABs](https://aurlabs.online/)
+- **Repository**: [https://github.com/B-max12/dear_diary.git](https://github.com/B-max12/dear_diary.git)
+- **Special Thanks**: The StoryPad open-source project for inspiration on calm digital journaling.
