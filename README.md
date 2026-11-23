@@ -31,7 +31,7 @@ Repository: [https://github.com/B-max12/dear_diary.git](https://github.com/B-max
 ## ✨ Key Highlights in v5.0.0
 
 - 🪟 **Complete Frosted Glassmorphism UI**: High-fidelity optical blurs (`BackdropFilter`), dual-mode translucent gradient containers (light & dark parchment glass), subtle specular rim highlights, and tactile 3D polymorphic buttons.
-- 📋 **StoryPad Writing Templates Suite (31 Templates across 7 Categories)**: Instant structured prompt sheets for *Daily Reflection*, *Gratitude*, *Productivity*, *Wellness*, *Creative*, *Travel*, and *Special Days*. Seamless 1-tap insert & replace in the editor.
+- 📋 **Dear-Diary Writing Templates Suite (31 Templates across 7 Categories)**: Instant structured prompt sheets for *Daily Reflection*, *Gratitude*, *Productivity*, *Wellness*, *Creative*, *Travel*, and *Special Days*. Seamless 1-tap insert & replace in the editor.
 - ⚡ **Real-Time Device-to-Device (D2D) Sync**: Type on your phone and see your text update simultaneously on desktop in real-time over Wi-Fi and mobile data via Supabase Realtime broadcast channels.
 - 💾 **WhatsApp-Style Full Cloud Backup & Restore**: Effortless 1-tap GZip-compressed backup to your private Google Drive `appDataFolder`. Restores every entry, tag, mood, photo, voice note, video, document, Gratitude Jar, and Time Capsule exactly as you left it.
 - 📱 **15 Custom App Launcher Icons & Live App Renaming**: Choose from 15 custom handcrafted icon designs and custom app names that immediately update your Android home screen launcher via dynamic `<activity-alias>` switches.
@@ -39,49 +39,6 @@ Repository: [https://github.com/B-max12/dear_diary.git](https://github.com/B-max
 - 🪶 **Optimized APK Footprint**: Losslessly compressed from 205MB down to **108.5MB** through automated palette-optimized GIF encoding and asset pruning.
 - 🎵 **25-Track StoryPad Relaxing Sounds & Mixer**: Layer rain, forest birds, wind chimes, waves, and campfire with individual volume sliders, sleep timer, and live floating music pill.
 - 🔒 **Zero-Knowledge Privacy & Lifetime Wax Seal Stamping**: AES-256 client-side encryption for confidential notes and physical wax seal simulation that permanently locks pages into immutable read-only records.
-
----
-
-## 🎨 AI Screenshot Generation Prompts
-
-Want to generate high-resolution mockups to include in your repository's `docs/screenshots/`? Use these exact, professionally engineered image prompts in Midjourney, DALL-E 3, or Flux:
-
-<details>
-<summary><b>Click to expand AI prompts for all 10 core screens</b></summary>
-
-### 1. Home Timeline (Glassmorphic Vintage)
-> `Modern Android smartphone mockup, displaying a calm personal journal app interface called 'Dear Diary'. Beautiful frosted glassmorphism aesthetic with translucent glass cards, BackdropFilter blur, soft warm cream paper texture underneath, delicate gold rim borders, subtle diffuse shadows. Displaying today's entries with animated mood emojis, glowing day-color indicator strips, and floating tactile 3D glass action buttons. Warm parchment aesthetic meets ultra-clean luxury UI design, 8k resolution, photorealistic studio lighting, Behance trending UI/UX.`
-
-### 2. StoryPad Writing Templates Sheet
-> `Mobile app bottom modal sheet UI mockup showing a StoryPad-inspired 'Writing Templates' gallery. Sleek frosted glass background with high blur, category filter chips (Daily Reflection, Gratitude, Growth, Wellness, Creative, Travel, Special Days) with pastel glow. Glass cards displaying template cards with hand-drawn line-art emojis, titles like '5-Minute Journal', 'Evening Wind-Down', and 'Weekly Review', with neat tonal 'Use Template' action buttons. Elegant typography, clean typography, luxury iOS and Android design.`
-
-### 3. Entry Editor with Docked Glass Toolbar
-> `Close-up shot of a smartphone running a vintage digital diary editor. Vintage lined cream paper background with handwritten serif font. A bottom docked frosted glass toolbar floats right above the digital keyboard, containing glossy tactile icons for Bold, Italic, 2-Tier Color Picker, Unified Media (Camera, Mic, Video, Document), Wax Seal Stamp, and GPS Location Pin. Translucent amber and slate accents, crisp high-end product render.`
-
-### 4. 2-Tier 100-Shade Color Palette Sheet
-> `Smartphone screen displaying an innovative 2-tier color picker sheet. Frosted glass card showing 10 base color family circles (Black, Crimson Red, Tangerine Orange, Amber Gold, Forest Green, Teal, Sapphire Blue, Purple, Soft Rose, Sepia Brown). Directly underneath, a horizontal row of 10 calibrated shades of the selected family from light tint to deep shade. Minimalist, modern UI design, Apple Human Interface inspired.`
-
-### 5. Relaxing Ambient Sounds Mixer
-> `A dark-mode mobile UI bottom sheet for 'Relaxing Sounds' with a cozy ambient aesthetic. Grid of frosted translucent square tiles with minimalist icons for Rain, Cicada, Forest Birds, Wind Chime, Singing Bowl, and Campfire. Active tracks have a glowing amber rim and smooth volume slider underneath. Header shows a floating music note pill and sleep timer button (15m, 30m, 45m). Cozy night vibe, warm lighting, Figma showcase render.`
-
-### 6. Customization Studio & 15 Launcher Icons
-> `Smartphone settings screen titled 'Customizations'. Featuring an interactive 4-column responsive grid showcasing 15 different app launcher icons (Botanical Sage, Vintage Leather, Aurora Glass, Cyberpunk Neon, Starry Sky, Classic Parchment, Emerald Luxe). Includes sleek segment controls for Theme Mode (Light, Dark, System Default with split sun/moon icon) and Font Family selections. Clean, tactile, polished design.`
-
-### 7. 3D Wax Seal Workshop & Gratitude Jar
-> `Split view of two signature keepsake features in a mobile diary app: On the left, an antique glass Gratitude Jar filled with tied parchment scrolls that roll and drop into the jar. On the right, a 3D Wax Seal workshop where molten red and burgundy wax is stamped with an ornate monogram seal badge to permanently lock an entry forever. Tangible, nostalgic, vintage luxury craftsmanship, photorealistic.`
-
-### 8. WhatsApp-Style Google Drive Backup & Storage Management
-> `Smartphone settings screen for 'Data & Cloud Backup'. Clean card with official Google Drive logo, animated sync status badge, last backup timestamp, and a segmented storage bar showing Local Database (Drift SQLite), Voice Notes, Photos, and Videos. Two tactile glass buttons: 'Back Up Now' (cloud upload icon) and 'Restore Backup'. Security badge below: 'Zero-Knowledge End-to-End Encryption'. Trustworthy, modern fintech-grade UX.`
-
-### 9. World Footsteps Map & GPS Journey
-> `Full-screen mobile app interface displaying a vintage-style illustrated world map with custom warm-toned pins marking diary memories. A transparent frosted glass app bar floats on top with a search field and a map style switcher (Streets / Vintage Satellite / Terrain). Bottom card previews the memory pinned at that location with a photo thumbnail, date, and journal snippet. Adventure, travel log, National Geographic inspired.`
-
-### 10. Safina AI Companion Chat Screen
-> `Conversational AI reflection screen named 'Safina'. Calm, poetic chat interface with soft warm message bubbles, gentle serif typography, and reflective prompts like 'How did today feel in your heart?'. Frosted glass input bar at the bottom with fountain pen write icon. No coding, no robotic elements; feels like confiding in a wise, timeless lifelong mentor. Serene, emotional wellbeing, Behance top design.`
-
-</details>
-
----
 
 ## 🏗️ Technical Architecture
 
