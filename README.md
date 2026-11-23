@@ -20,11 +20,11 @@ Repository: [https://github.com/B-max12/dear_diary.git](https://github.com/B-max
 
 | 📱 Frosted Glass Timeline | 📝 StoryPad Templates | 🎨 Customization Studio |
 | :---: | :---: | :---: |
-| ![Timeline Preview](docs/screenshots/home_timeline.jpg) | ![Templates Preview](docs/screenshots/templates_sheet.jpg) | ![Customization Preview](docs/screenshots/customizations.jpg) |
+| ![Timeline Preview](https://github.com/B-max12/dear_diary/blob/429045c27e09b6f26ff4d5bcdde4d0f890013cb9/Images/timeline.jpeg) | ![Templates Preview](docs/screenshots/templates_sheet.jpg) | ![Customization Preview](https://github.com/B-max12/dear_diary/blob/429045c27e09b6f26ff4d5bcdde4d0f890013cb9/Images/Custom.jpeg) |
 
 | ✍️ Docked Rich Text Editor | 🎵 Ambient Sounds Mixer | ☁️ WhatsApp-Style Backup |
 | :---: | :---: | :---: |
-| ![Editor Preview](docs/screenshots/editor_toolbar.jpg) | ![Sounds Preview](docs/screenshots/relaxing_sounds.jpg) | ![Backup Preview](docs/screenshots/data_backup.jpg) |
+| ![Editor Preview](https://github.com/B-max12/dear_diary/blob/429045c27e09b6f26ff4d5bcdde4d0f890013cb9/Images/Eidetor%20.jpeg) | ![Sounds Preview](https://github.com/B-max12/dear_diary/blob/429045c27e09b6f26ff4d5bcdde4d0f890013cb9/Images/sound.jpeg) | ![Backup Preview](docs/screenshots/data_backup.jpg) |
 
 ---
 
